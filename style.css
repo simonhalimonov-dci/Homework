@@ -1,0 +1,267 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+body {
+    background: #EFEFED;
+}
+
+img {
+    width: 100%;
+}
+
+/* Typography */
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #888;
+    line-height: 1.9;
+    margin-bottom: 50px;
+}
+
+.button {
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-right: 32px;
+    color: #000;
+    position: relative;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #000000;
+}
+
+.button.primary::after {
+    background: green;
+}
+
+.button.secondary::after {
+    background: #ccc;
+}
+
+.overline {
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 0.2em;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #aaaaaa;
+    position: relative;
+    margin-left: 60px;
+}
+
+.overline::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #aaaaaa;
+    top: 40%;
+    left: -60px;
+}
+
+.underline {
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 0.2em;
+    color: #aaaaaa;
+    margin-bottom: 30px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+}
+
+.logo img {
+    /* height: 50px; */
+    max-width: 180px;
+}
+
+.search, .menu {
+    display: flex;
+    align-items: center;
+    font-family: 'Muli', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.search img, .menu img {
+    margin-right: 8px;
+}
+
+/* Main Content */
+
+main {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.hero-img {
+    width: 50%;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.arrow {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow img {
+    padding: 8px;
+    margin: 16px;
+    width: 32px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+}
+
+/* Aside Content */
+
+aside {
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    display: flex;
+    transform: rotate(-90deg);
+}
+
+aside img {
+    transform: rotate(90deg);
+    margin-right: 16px;
+    width: 24px;
+}
+
+aside .overline {
+    margin-bottom: 0;
+}
+
+/* Footer */
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.info div {
+    background: goldenrod;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-link a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.category-link img {
+    width: 24px;
+    margin-right: 16px;
+}
+
+div.buy-link {
+    background: green;
+    font-size: 30px;
+}
+
+div.buy-link a {
+    color: #ffffff;
+}
